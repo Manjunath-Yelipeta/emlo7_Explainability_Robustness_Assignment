@@ -31,6 +31,7 @@ docker login
 
 ```
 docker tag emlov2-session-04 yelipetamanjunath/emlo2_a4
+docker push yelipetamanjunath/emlo2_a4
 ```
 
 - To run the docker image and access the model as web app, run the below command
