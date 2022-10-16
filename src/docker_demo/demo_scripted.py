@@ -3,6 +3,7 @@ from typing import List, Tuple
 
 import torch
 import gradio as gr
+import torchvision.transforms as T
 
 
 #import utils
@@ -23,20 +24,22 @@ def demo():
     model = torch.jit.load("model.script.pt")
     model.eval()
 
-    print(f"Loaded Model: {model}")
-    with open("cifar10_classes.json") as f:
-        categories = json.load(f)
-
     def recognize_image(image):
         if image is None:
             return None
-        image = torch.tensor(image[None, ...],dtype=torch.float32)
-        image = image.permute(0,3, 1, 2)
-        preds = model.forward_jit(image)
+        image = T.ToTensor()(image).unsqueeze(0)
+        try:
+            preds = model.forward_jit(image)
+        except Exception:
+            traceback.print_exc()
         preds = preds[0].tolist()
-        return {categories['names'][i]: preds[i] for i in range(10)}
+        label = ["airplane", "automobile", "bird", "cat", "deer", "dog", "frog", "horse", "ship", "truck"]
+        return {label[i]: preds[i] for i in range(10)}
 
-    im = gr.Image(shape=(32, 32), image_mode="RGB")
+    print(f"Loaded Model: {model}")
+   
+
+    im = gr.Image(shape=(32, 32))
 
     demo = gr.Interface(
         fn=recognize_image,
