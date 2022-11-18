@@ -87,11 +87,9 @@
  'wooden_spoon_910_occlusion.jpg',
  'wooden_spoon_910_saliency.jpg',
  'wooden_spoon_910_shap.jpg'] -->
-/
-image_list = os.listdir("C:/Users/Ymanjunath5/emlo7_explainability_robustness/emlo-assn2/s7_explainability/s7/Robustness_output/")
-​
-image_list
-['African_Elephant_386_fgsm.jpg',
+
+
+<!-- ['African_Elephant_386_fgsm.jpg',
  'African_Elephant_386_Gaussnoise.jpg',
  'African_Elephant_386_pixeldropout_.jpg',
  'African_Elephant_386_RandomBrightness.jpg',
@@ -130,7 +128,7 @@ image_list
  'wooden_spoon_910_fgsm.jpg',
  'wooden_spoon_910_Gaussnoise.jpg',
  'wooden_spoon_910_pixeldropout_.jpg',
- 'wooden_spoon_910_RandomBrightness.jpg']
+ 'wooden_spoon_910_RandomBrightness.jpg'] -->
 
 
 
