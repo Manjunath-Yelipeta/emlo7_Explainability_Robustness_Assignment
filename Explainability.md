@@ -17,13 +17,13 @@
 
 ## These are images with explanations
 
-<!-- ['',
- '',
+<!-- ['African_Elephant_386_gradcam.jpg',
+ 'African_Elephant_386_gradcam_plus_plus.jpg',
  'African_Elephant_386_ig.jpg',
- '',
- '',
- '',
- '',
+ 'African_Elephant_386_ig_with_noisetunnel.jpg',
+ 'African_Elephant_386_occlusion.jpg',
+ 'African_Elephant_386_saliency.jpg',
+ 'African_Elephant_386_shap.jpg',
  'Computer_Mouse_673_gradcam.jpg',
  'Computer_Mouse_673_gradcam_plus_plus.jpg',
  'Computer_Mouse_673_ig.jpg',
@@ -87,6 +87,51 @@
  'wooden_spoon_910_occlusion.jpg',
  'wooden_spoon_910_saliency.jpg',
  'wooden_spoon_910_shap.jpg'] -->
+/
+image_list = os.listdir("C:/Users/Ymanjunath5/emlo7_explainability_robustness/emlo-assn2/s7_explainability/s7/Robustness_output/")
+​
+image_list
+['African_Elephant_386_fgsm.jpg',
+ 'African_Elephant_386_Gaussnoise.jpg',
+ 'African_Elephant_386_pixeldropout_.jpg',
+ 'African_Elephant_386_RandomBrightness.jpg',
+ 'Computer_Mouse_673_fgsm.jpg',
+ 'Computer_Mouse_673_Gaussnoise.jpg',
+ 'Computer_Mouse_673_pixeldropout_.jpg',
+ 'Computer_Mouse_673_RandomBrightness.jpg',
+ 'Goose_99_fgsm.jpg',
+ 'Goose_99_Gaussnoise.jpg',
+ 'Goose_99_pixeldropout_.jpg',
+ 'Goose_99_RandomBrightness.jpg',
+ 'Indian_Elephant_385_fgsm.jpg',
+ 'Indian_Elephant_385_Gaussnoise.jpg',
+ 'Indian_Elephant_385_pixeldropout_.jpg',
+ 'Indian_Elephant_385_RandomBrightness.jpg',
+ 'Leopard_288_fgsm.jpg',
+ 'Leopard_288_Gaussnoise.jpg',
+ 'Leopard_288_pixeldropout_.jpg',
+ 'Leopard_288_RandomBrightness.jpg',
+ 'Pencil_Sharpener_710_fgsm.jpg',
+ 'Pencil_Sharpener_710_Gaussnoise.jpg',
+ 'Pencil_Sharpener_710_pixeldropout_.jpg',
+ 'Pencil_Sharpener_710_RandomBrightness.jpg',
+ 'Perfume_711_fgsm.jpg',
+ 'Perfume_711_Gaussnoise.jpg',
+ 'Perfume_711_pixeldropout_.jpg',
+ 'Perfume_711_RandomBrightness.jpg',
+ 'Wallet_893_fgsm.jpg',
+ 'Wallet_893_Gaussnoise.jpg',
+ 'Wallet_893_pixeldropout_.jpg',
+ 'Wallet_893_RandomBrightness.jpg',
+ 'water_bottle_898_fgsm.jpg',
+ 'water_bottle_898_Gaussnoise.jpg',
+ 'water_bottle_898_pixeldropout_.jpg',
+ 'water_bottle_898_RandomBrightness.jpg',
+ 'wooden_spoon_910_fgsm.jpg',
+ 'wooden_spoon_910_Gaussnoise.jpg',
+ 'wooden_spoon_910_pixeldropout_.jpg',
+ 'wooden_spoon_910_RandomBrightness.jpg']
+
 
 
  ## image 1 Explanations
